@@ -8,5 +8,10 @@ int maina() {
     scanf("%d", &side);
 
     printf("Area is %d", side * side);
+
+    // Q. Solve int a = 1.999999 and tell whats output here a=1 or a=2
+    int a = 1.999999;
+    printf("%d", a);    
+
     return 0;
 }
