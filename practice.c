@@ -65,7 +65,7 @@ printf("%d \n", 55 == 44 && 101 != 101);
 printf("%d \n", 5 == 5 || 40 <= 40);
 printf("%d \n", !(5 != 10));
 
-*/
+
 
 //Assignment Operator 
 int x,y,z,v,w;
@@ -78,6 +78,53 @@ printf("%d \n", y -= l);
 printf("%d \n", z *= m);
 printf("%d \n", v /= n);
 printf("%d \n", w %= o);
+
+// write a program to check if a number is divisible by 2 or not.  same for even and odd
+int x;
+printf("Enter any Number");
+scanf("%d", &x);
+
+printf("%d", x % 2 == 0);  //1 -> divisible  , 0 -> not divisible
+
+//Are the following valid or not
+int a = 8^8;
+int x;int y = x;
+int x, y=x;         //invalid
+char stars = '**',  //invalid
+
+//Print 1(true) or 0(false) for following statements
+  // a. if it's sunday & it's snowing -> true
+int sunday = 1; int snowing = 1;  printf("%d \n", sunday && snowing);
+
+  // b. if it's monday or it's raining -> true
+  int monday = 1; int raining = 0;  printf("%d \n", monday || raining);
+
+  // c. if a number is gretear than 9 & less than 100 -> true
+  int x; printf("Enter a number \n"); scanf("%d", &x);  printf("%d \n", x > 9 && x < 100);
+
+  */
+ 
+//Conditional Statements
+int age = 21;
+
+if(age > 20){
+  printf("you are young \n");
+}
+else {
+  printf("you are kid");
+}
+
+// if -else if - else
+if(age >= 18)
+ printf("adult \n");      //only ak statement(ak j kam karavanu che) tethi {curly bracet} na lakhiye to pan xhalse
+else if(age >13 && age <18)   
+printf("teenager \n");
+else printf("child");
+
+
+//Ternary Operator
+age >= 18 ? printf("adult \n") : printf("not adult \n");
+
 
     return 0;
 }
