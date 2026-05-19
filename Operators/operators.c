@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int main() {
-
+/*
     
 //OPERATORS -> Relation Operator
 printf("%d \n", 5 > 3);
@@ -29,8 +29,28 @@ printf("%d \n", x += k);
 printf("%d \n", y -= l);  
 printf("%d \n", z *= m);
 printf("%d \n", v /= n);
-printf("%d \n", w %= o);
+printf("%d \n", w %= o);     */
 
+//unary operator
+  //post increment operator
+    int i = 1;
+    printf("%d \n", i++);        //use , then update
+    printf("%d \n", i);
+
+  //pre increment operator
+    int k = 1;
+    printf("%d \n", ++k);        // update , then use
+    printf("%d \n", k);
+
+  //post decrement operator
+    int j = 1;
+    printf("%d \n", j--);       //use , then update
+    printf("%d \n", j);
+
+  //pre decrement operator
+    int l = 1;
+    printf("%d \n", --l);       // update , then use
+    printf("%d \n", l);
 
     return 0;
 }
