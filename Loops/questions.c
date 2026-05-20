@@ -54,7 +54,7 @@ int main() {
             printf("%d \n", i);
         }
     }
- */
+ 
 //print the factrial of a number n.
     int n;
     printf("enter number :");
@@ -65,6 +65,22 @@ int main() {
         fact = fact * i;
     }
     printf("final factorial is %d", fact);
+
+//print reverse of the table for a number n.
+    int n;
+    printf("Enter number :");
+    scanf("%d", &n);
+
+    for(int i=10; i>=1;i--){
+        printf("%d \n", i * n);
+    }
+*/
+//calculate the sum of all numbers between 5 and 50.(including 5 & 50)
+    int sum = 0;
+    for(int i=5; i<=50; i++){
+        sum = sum + i;     
+    }
+    printf("%d", sum);
 
     return 0;
 }
