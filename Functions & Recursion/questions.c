@@ -1,35 +1,37 @@
 #include<stdio.h>
+#include<math.h>
 
 
-void namaste();
-void bonjour();
-void printHello();
+float squareArea(float side);
+float circleArea(float rad);
+float rectangleArea(float a, float b);
 
-int main() {
-   char ch;
-   printf("Enter i if indian or f if french :");
-   scanf("%c", &ch);
 
-   if(ch == 'i'){
-    namaste();
-   }else if(ch == 'f'){
-    bonjour();
-   }else{
-    printHello();
-   }
+int main() { 
+//Q. use library function to calculate the square of a number given by user.
+   int n=4;
+   printf("%f \n", pow(n,2));
 
+// Q. write functions to calculate area of a square,a circle & a rectangle.
+    float a=5.0;
+    float b=10.0;
+    float rad =1;
+    float side = 4;
+    printf("rectangleArea is %f \n", rectangleArea(a,b));
+     printf("circleArea is %f \n", circleArea(rad));
+      printf("squareArea is %f \n", squareArea(side));
    return 0;
 }
 
 //function Defination
-void namaste(){
-    printf("Namaste \n");
+float squareArea(float side){
+    return side * side;
 }
 
-void bonjour(){
-    printf("bonjour \n");
+float circleArea(float rad){
+    return 3.14 *rad * rad;
 }
 
-void printHello(){
-    printf("Hello World \n");
+float rectangleArea(float a, float b){
+    return a * b;
 }
