@@ -18,11 +18,11 @@ int main() {
     float b=10.0;
     float rad =1;
     float side = 4;
-    printf("rectangleArea is %f \n", rectangleArea(a,b));
-     printf("circleArea is %f \n", circleArea(rad));
-      printf("squareArea is %f \n", squareArea(side));
+//    printf("rectangleArea is %f \n", rectangleArea(a,b));
+//     printf("circleArea is %f \n", circleArea(rad));
+ //     printf("squareArea is %f \n", squareArea(side));
 
-      float far = convertTemp(37);
+      float far = convertTemp(0);
       printf(" far : %d \n", far);
    return 0;
 }
