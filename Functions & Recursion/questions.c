@@ -5,6 +5,7 @@
 float squareArea(float side);
 float circleArea(float rad);
 float rectangleArea(float a, float b);
+float convertTemp(float celsius);
 
 
 int main() { 
@@ -20,6 +21,9 @@ int main() {
     printf("rectangleArea is %f \n", rectangleArea(a,b));
      printf("circleArea is %f \n", circleArea(rad));
       printf("squareArea is %f \n", squareArea(side));
+
+      float far = convertTemp(37);
+      printf(" far : %d \n", far);
    return 0;
 }
 
@@ -34,4 +38,9 @@ float circleArea(float rad){
 
 float rectangleArea(float a, float b){
     return a * b;
+}
+
+float convertTemp(float celsius){
+    float far = celsius * (9.0/5.0) + 32;
+    return far;
 }
