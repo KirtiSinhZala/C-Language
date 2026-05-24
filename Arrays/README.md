@@ -1,0 +1,1 @@
+// Function ne jyare Array apiye ane te ema koi changes kare to te  CALL BY REFEREBCE  thay chhe  because Arrays pan POINTERS  che.
