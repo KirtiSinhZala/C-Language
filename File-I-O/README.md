@@ -15,8 +15,8 @@
         "a" ->  write new data after old data in file
 
 
-6. # fclose(ptr)  
- function(file Pointer name) for closing file 
+6. # fclose(ptr)  ->   function(file Pointer name) for closing file 
+
 
 7. # fscanf(fptr, "%c", &ch)    
    fptr:file pointer(which file want to read),  %c:formet specifiers(which type of data want to read)  , &ch: variable name(where to store)
